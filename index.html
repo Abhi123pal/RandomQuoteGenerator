@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto Mono", monospace;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: no-repeat center/cover url(./img/bg.jpg);
+      }
+      body>h1{
+        color: #ffffff;
+        background: #000000;
+        margin-bottom: 15px;
+        width: 30vw;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .quoteContainer {
+        height: 35vh;
+        width: 30vw;
+        min-height: 300px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 1px;
+        background-color: #ffffff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 20px;
+      }
+      .btn {
+        padding: 5px 2px;
+        width: 50%;
+        align-self: center;
+        border: 2px solid black;
+        cursor: pointer;
+        background: #000000;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Javascript Quote Generator</h1>
+    <div class="quoteContainer">
+      <p>
+        You're the smartest guy I ever met, and you're too stupid to see he made up his mind 10 minutes ago.
+      </p>
+
+      <h2>ARISTOTLE</h2>
+      <div class="btn" onclick="changeFun()">NewQuote</div>
+    </div>
+
+    <script src="./index.js">
+     
+    </script>
+  </body>
+</html>
